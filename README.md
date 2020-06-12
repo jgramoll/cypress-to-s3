@@ -4,6 +4,7 @@ Publish cypress artifacts to s3
 
 ## Usage
 
+```sh
 docker run \
   -v $(PWD)/cypress/:/cypress/ \
   -e AWS_ACCESS_KEY_ID \
@@ -13,3 +14,4 @@ docker run \
   -e S3_BUCKET=my-artifact-bucket \
   -e S3_PATH=edge/build123/ \
   jgramoll/cypress-to-s3
+```
