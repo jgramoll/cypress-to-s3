@@ -1,4 +1,4 @@
-FROM cypress/included:3.2.0
+FROM cypress/included:4.8.0
 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" \
  && unzip awscliv2.zip \
