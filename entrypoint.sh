@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
-
-# trim leading / so we don't get bucket//file
+# trim leading & trailing / so we don't get bucket//folder//file
 s3_path="${S3_PATH#/}"
+s3_path="${s3_path%/}"
 s3_bucket="${S3_BUCKET}"
 
 cypress run $@
